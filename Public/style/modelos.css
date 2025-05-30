@@ -1,0 +1,75 @@
+/* /veex-app/style/modelos.css */
+
+/* A imagem já está estilizada globalmente em main.css com .card-image */
+/* Se precisar de algo específico para modelos, adicione aqui. */
+
+.modal-form .insumos-list-container { /* Novo container para lista de insumos */
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.modal-form .insumos-list-container h4 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.modal-form .insumos-list ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 150px; /* Para listas grandes de insumos */
+    overflow-y: auto;
+    border: 1px solid var(--input-border);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    background-color: var(--input-background);
+}
+
+.modal-form .insumos-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 5px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+.modal-form .insumos-list li:last-child {
+    border-bottom: none;
+}
+.modal-form .insumos-list li .insumo-details {
+    flex-grow: 1;
+}
+.modal-form .insumos-list li .insumo-unit {
+    color: var(--text-secondary);
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.btn-remove-insumo {
+    background: none;
+    border: none;
+    color: var(--accent-pink);
+    cursor: pointer;
+    font-size: 1.2em; /* Aumentar um pouco o 'x' */
+    padding: 0 5px;
+    line-height: 1;
+}
+.btn-remove-insumo:hover {
+    color: var(--accent-pink-hover);
+}
+
+.add-insumo-form-group { /* Para agrupar os campos de adicionar insumo */
+    margin-top: 10px;
+}
+.add-insumo-form-group .form-group-inline input[type="number"] {
+    flex-basis: 90px; /* Largura base para input de quantidade */
+    flex-grow: 0;
+}
+
+#modeloFormLoadingInsumos { /* Placeholder para carregar insumos */
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
