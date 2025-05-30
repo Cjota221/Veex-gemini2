@@ -1,1 +1,19 @@
-
+/* /veex-app/style/relatorios.css */
+.relatorios-content .card .card-icon-svg {
+    width: 38px; /* Ícones um pouco maiores para cards de relatório */
+    height: 38px;
+    margin-bottom: 10px;
+    /* A cor já está no HTML inline, mas poderia ser via classe aqui */
+}
+#reportOutputArea {
+    background-color: var(--card-background);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    min-height: 100px;
+    color: var(--text-secondary);
+}
+#reportOutputArea h5 {
+    color: var(--accent-pink);
+    margin-bottom: 10px;
+}
