@@ -1,0 +1,56 @@
+<div class="financeiro-content page-module-content">
+    <div class="page-header">
+        <h3 class="page-section-title">Gestão Financeira</h3>
+    </div>
+
+    <div class="financeiro-summary card-grid">
+        <div class="card summary-card">
+            <h4 class="card-title">Saldo Atual</h4>
+            <p class="card-info text-success" id="financeiroSaldoAtual" style="font-size: 1.8em; font-weight: bold;">R$ 0,00</p>
+        </div>
+        <div class="card summary-card">
+            <h4 class="card-title">Total de Entradas (Mês)</h4>
+            <p class="card-info text-light-blue" id="financeiroTotalEntradas" style="font-size: 1.5em;">R$ 0,00</p>
+        </div>
+        <div class="card summary-card">
+            <h4 class="card-title">Total de Saídas (Mês)</h4>
+            <p class="card-info text-pink" id="financeiroTotalSaidas" style="font-size: 1.5em;">R$ 0,00</p>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="lancamentos-section">
+        <h4>Lançamentos Recentes</h4>
+        <div class="add-button-container">
+            <button class="btn btn-primary" id="addLancamentoBtn">
+                <img src="assets/icons/plus.svg" alt="" class="btn-icon-svg"> Novo Lançamento
+            </button>
+        </div>
+        <div class="filters-container" id="lancamentosFilters">
+            <input type="month" id="filterLancamentoMes" class="form-control-filter">
+            <select id="filterLancamentoTipo" class="form-control-filter">
+                <option value="">Todos os Tipos</option>
+                <option value="entrada">Entrada</option>
+                <option value="saida">Saída</option>
+            </select>
+        </div>
+        <div class="table-container" style="margin-top: 20px;">
+            <table class="data-table" id="lancamentosTable">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Tipo</th>
+                        <th>Valor (R$)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="6" class="loading-placeholder">Carregando lançamentos...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
