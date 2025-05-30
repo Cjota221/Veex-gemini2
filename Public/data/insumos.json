@@ -1,0 +1,8 @@
+[
+    { "id": 1, "nome": "Tecido Algodão Premium", "categoria": "Tecidos", "unidadeMedida": "m", "custoPorUnidade": 15.00, "estoqueMinimo": 50, "estoqueAtual": 120 },
+    { "id": 2, "nome": "Linha de Costura Branca", "categoria": "Aviamentos", "unidadeMedida": "cone", "custoPorUnidade": 5.50, "estoqueMinimo": 10, "estoqueAtual": 5 },
+    { "id": 3, "nome": "Denim Indigo", "categoria": "Tecidos", "unidadeMedida": "m", "custoPorUnidade": 28.00, "estoqueMinimo": 30, "estoqueAtual": 45 },
+    { "id": 4, "nome": "Botão Metálico Jeans", "categoria": "Aviamentos", "unidadeMedida": "un", "custoPorUnidade": 0.80, "estoqueMinimo": 200, "estoqueAtual": 500 },
+    { "id": 5, "nome": "Couro Sintético Preto", "categoria": "Materiais Diversos", "unidadeMedida": "m", "custoPorUnidade": 35.00, "estoqueMinimo": 20, "estoqueAtual": 30 },
+    { "id": 6, "nome": "Zíper Médio Nylon", "categoria": "Aviamentos", "unidadeMedida": "un", "custoPorUnidade": 1.20, "estoqueMinimo": 100, "estoqueAtual": 150 }
+]
