@@ -1,1 +1,70 @@
+/* /veex-app/style/financeiro.css */
+.financeiro-summary.card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustar colunas */
+    margin-bottom: var(--container-padding);
+}
+.summary-card .card-title {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+.summary-card .card-info {
+    margin-top: 5px;
+}
+.lancamentos-section h4 {
+    font-size: 1.3rem;
+    color: var(--accent-pink);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+.financeiro-content .form-control-filter {
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border);
+    background-color: var(--input-background);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-right: 10px;
+    margin-bottom: var(--container-padding);
+}
+.financeiro-content .form-control-filter:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 2px rgba(var(--accent-pink-rgb), 0.2);
+}
 
+.table-container {
+    overflow-x: auto; /* Para tabelas responsivas */
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 5px; /* Pequeno padding interno */
+    border: 1px solid var(--border-color);
+}
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+.data-table th {
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: var(--primary-dark-blue); /* Cabeçalho da tabela um pouco mais escuro */
+}
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.data-table tbody tr:hover {
+    background-color: var(--secondary-dark-blue);
+}
+.data-table .action-buttons-table .btn {
+    margin-right: 5px;
+}
+.tipo-entrada { color: var(--success-color); font-weight: bold; }
+.tipo-saida { color: var(--error-color); font-weight: bold; }
