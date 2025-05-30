@@ -1,0 +1,68 @@
+<div class="configuracoes-content page-module-content">
+    <div class="page-header">
+        <h3 class="page-section-title">Configurações do Sistema</h3>
+    </div>
+
+    <div class="config-sections">
+        <form id="configForm">
+            <section class="config-section card">
+                <h4 class="card-title">Dados da Empresa</h4>
+                <div class="form-group">
+                    <label for="configNomeEmpresa">Nome da Empresa</label>
+                    <input type="text" id="configNomeEmpresa" name="nomeEmpresa" class="form-control-config" placeholder="Minha Empresa Ltda">
+                </div>
+                <div class="form-group">
+                    <label for="configLogoEmpresa">URL do Logo</label>
+                    <input type="url" id="configLogoEmpresa" name="logoEmpresa" class="form-control-config" placeholder="https://...">
+                </div>
+                <div class="form-group">
+                    <label for="configMoeda">Moeda Padrão</label>
+                    <select id="configMoeda" name="moeda" class="form-control-config">
+                        <option value="BRL">Real Brasileiro (R$)</option>
+                        <option value="USD">Dólar Americano (US$)</option>
+                        <option value="EUR">Euro (€)</option>
+                    </select>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="config-section card">
+                <h4 class="card-title">Preferências de Aparência</h4>
+                <div class="form-group">
+                    <label for="configTema">Tema da Interface</label>
+                    <select id="configTema" name="tema" class="form-control-config">
+                        <option value="escuro">Escuro (Padrão)</option>
+                        <option value="claro" disabled>Claro (Em breve)</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="configItensPorPagina">Itens por Página (Grades)</label>
+                    <input type="number" id="configItensPorPagina" name="itensPorPagina" class="form-control-config" value="12" min="4" max="100">
+                </div>
+            </section>
+
+             <hr class="section-divider">
+
+            <section class="config-section card">
+                <h4 class="card-title">Notificações</h4>
+                 <div class="form-group">
+                    <label class="form-switch">
+                        <input type="checkbox" id="configNotifEstoque" name="notifEstoque" checked>
+                        <span>Notificar estoque baixo de insumos</span>
+                    </label>
+                </div>
+                 <div class="form-group">
+                     <label class="form-switch">
+                        <input type="checkbox" id="configNotifProducao" name="notifProducao">
+                        <span>Notificar conclusão de ordens de produção</span>
+                    </label>
+                </div>
+            </section>
+
+            <div style="margin-top: 30px; text-align: right;">
+                <button type="submit" class="btn btn-primary">Salvar Configurações</button>
+            </div>
+        </form>
+    </div>
+</div>
