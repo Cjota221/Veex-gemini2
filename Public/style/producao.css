@@ -1,1 +1,31 @@
+/* /veex-app/style/producao.css */
+.producao-content .form-control-filter {
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border);
+    background-color: var(--input-background);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-right: 10px; /* Espaço entre filtros */
+    margin-bottom: var(--container-padding); /* Espaço abaixo da linha de filtros */
+}
+.producao-content .form-control-filter:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 2px rgba(var(--accent-pink-rgb), 0.2);
+}
 
+.card .status-tag {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--border-radius);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.status-planejada { background-color: #63B3ED; color: var(--primary-dark-blue); } /* Azul claro */
+.status-em-andamento { background-color: var(--warning-color); color: white; } /* Laranja */
+.status-pausada { background-color: #A0AEC0; color: var(--primary-dark-blue); } /* Cinza */
+.status-concluida { background-color: var(--success-color); color: white; } /* Verde */
+.status-cancelada { background-color: var(--error-color); color: white; } /* Vermelho */
