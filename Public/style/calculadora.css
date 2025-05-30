@@ -1,1 +1,37 @@
-
+/* /veex-app/style/calculadora.css */
+.calculadora-container.card { /* Reutiliza o estilo de card para o container da calculadora */
+    max-width: 700px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: var(--container-padding);
+}
+.form-control-calc { /* Inputs da calculadora */
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border);
+    background-color: var(--input-background);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+.form-control-calc:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 2px rgba(var(--accent-pink-rgb), 0.2);
+}
+.resultado-calculadora {
+    background-color: var(--primary-dark-blue); /* Fundo um pouco diferente */
+    padding: var(--card-padding);
+    border: 1px solid var(--accent-pink);
+}
+.resultado-calculadora h4 {
+    color: var(--light-blue-accent);
+    margin-bottom: 15px;
+}
+.resultado-calculadora p {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+.resultado-calculadora p strong {
+    color: var(--text-primary);
+}
