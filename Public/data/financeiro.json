@@ -1,0 +1,8 @@
+[
+    { "id": 1, "data": "2025-05-01", "descricao": "Venda Camisetas Lote #123", "categoria": "Venda de Produtos", "tipo": "entrada", "valor": 1250.75 },
+    { "id": 2, "data": "2025-05-03", "descricao": "Pagamento Aluguel Fábrica", "categoria": "Despesa Fixa", "tipo": "saida", "valor": 2500.00 },
+    { "id": 3, "data": "2025-05-05", "descricao": "Compra de Tecido Algodão", "categoria": "Compra de Insumos", "tipo": "saida", "valor": 650.00 },
+    { "id": 4, "data": "2025-05-10", "descricao": "Venda Calças Jeans Pedido #124", "categoria": "Venda de Produtos", "tipo": "entrada", "valor": 2300.50 },
+    { "id": 5, "data": "2025-05-15", "descricao": "Pagamento Energia Elétrica", "categoria": "Despesa Fixa", "tipo": "saida", "valor": 380.20 },
+    { "id": 6, "data": "2025-04-28", "descricao": "Adiantamento Cliente X", "categoria": "Venda de Produtos", "tipo": "entrada", "valor": 500.00 }
+]
