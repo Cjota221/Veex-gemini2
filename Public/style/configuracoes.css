@@ -1,1 +1,112 @@
+/* /veex-app/style/configuracoes.css */
+.config-sections .config-section.card {
+    margin-bottom: var(--container-padding);
+    padding: var(--card-padding);
+}
+.config-section .card-title { /* Título dentro do card de seção */
+    font-size: 1.2em;
+    color: var(--accent-pink);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+.form-control-config { /* Inputs de configuração */
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border);
+    background-color: var(--input-background);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+.form-control-config:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 2px rgba(var(--accent-pink-rgb), 0.2);
+}
 
+/* Estilo para switch (checkbox customizado) */
+.form-switch {
+    position: relative;
+    display: inline-flex; /* Alterado para inline-flex para melhor alinhamento com o label */
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+.form-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.form-switch span { /* Texto do label */
+    margin-left: 45px; /* Espaço para o switch customizado */
+    user-select: none;
+}
+.form-switch input[type="checkbox"] + span::before { /* O fundo do switch */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 20px;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    transition: background-color var(--transition-speed);
+}
+.form-switch input[type="checkbox"] + span::after { /* O botão do switch */
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform var(--transition-speed);
+}
+.form-switch input[type="checkbox"]:checked + span::before {
+    background-color: var(--accent-pink);
+}
+.form-switch input[type="checkbox"]:checked + span::after {
+    transform: translate(18px, -50%);
+}
+.form-switch input[type="checkbox"]:focus + span::before { /* Estilo de foco */
+    box-shadow: 0 0 0 2px rgba(var(--accent-pink-rgb), 0.3);
+}
+
+.page-module-content .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--container-padding);
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+.page-module-content .page-section-title {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+.page-module-content .filters-container {
+    margin-bottom: var(--container-padding);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.page-module-content .form-control-filter {
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border);
+    background-color: var(--input-background);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+.page-module-content .form-control-filter:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 2px rgba(var(--accent-pink-rgb), 0.2);
+}
