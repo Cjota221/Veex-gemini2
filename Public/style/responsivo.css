@@ -1,0 +1,143 @@
+/* /veex-app/style/responsivo.css */
+
+/* Tablets e telas menores de desktop (até 1024px) */
+@media (max-width: 1024px) {
+    :root {
+        --sidebar-width-open: 240px;
+        --sidebar-width-closed: 70px;
+        --container-padding: 20px;
+        --card-padding: 18px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: var(--container-padding);
+    }
+    .app-header #pageTitle {
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablets (portrait) e celulares grandes (landscape) (até 768px) */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 60px;
+    }
+    .sidebar {
+        transform: translateX(calc(-1 * var(--sidebar-width-open)));
+        box-shadow: 2px 0 15px rgba(0,0,0,0.2);
+        /* width continua var(--sidebar-width-open) quando aberta */
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    .sidebar.collapsed { /* Em mobile, 'collapsed' significa fechada, 'open' significa aberta */
+        transform: translateX(calc(-1 * var(--sidebar-width-open)));
+    }
+    .sidebar .desktop-only-toggle { /* Esconder o toggle interno da sidebar em mobile */
+        display: none;
+    }
+
+    .mobile-only-toggle { /* Mostrar o botão de toggle principal (hamburger) */
+        display: flex;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1001; /* Acima da sidebar quando fechada, mas o conteúdo da sidebar pode sobrepor se necessário */
+        background-color: rgba(var(--primary-dark-blue),0.8);
+        backdrop-filter: blur(5px);
+    }
+    .sidebar.open ~ .mobile-only-toggle { /* Estilo do botão quando o menu está aberto */
+      /* Pode mudar o ícone ou posição aqui se necessário */
+    }
+
+    .main-content {
+        padding-left: 0; /* Sem padding fixo da sidebar */
+    }
+    .main-content.sidebar-collapsed { /* Em mobile, sidebar-collapsed no main-content não faz nada */
+        padding-left: 0;
+    }
+
+    .app-header {
+        padding-left: calc(var(--container-padding) + 40px + 15px); /* Espaço para o botão de toggle fixo */
+    }
+    .app-header #pageTitle {
+        font-size: 1.2rem;
+    }
+    .user-profile .user-name {
+        display: none; /* Opcional: esconder nome do usuário em telas pequenas */
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    .modal-title {
+        font-size: 1.3rem;
+    }
+    .card-actions {
+        flex-direction: column; /* Botões empilhados em cards */
+    }
+    .card-actions .btn + .btn {
+        margin-top: 10px;
+    }
+    .add-button-container {
+        display: flex; /* Para ocupar toda a largura e botão à direita */
+    }
+    .add-button-container .btn {
+        width: 100%; /* Botão de adicionar principal ocupa toda largura */
+    }
+}
+
+/* Celulares (portrait) (até 480px) */
+@media (max-width: 480px) {
+    :root {
+        --container-padding: 15px;
+        --card-padding: 15px;
+    }
+     .sidebar.open {
+        width: 85%; /* Sidebar ocupa mais da tela */
+    }
+
+    .app-header {
+        padding-left: calc(var(--container-padding) + 35px + 10px);
+    }
+    .app-header #pageTitle {
+        font-size: 1.1rem;
+    }
+    .user-profile {
+        gap: 10px;
+    }
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr; /* Uma coluna */
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    .btn-small {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+    .modal-footer {
+        flex-direction: column;
+    }
+    .modal-footer .btn {
+        width: 100%;
+    }
+    .modal-footer .btn + .btn {
+        margin-top: 10px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
