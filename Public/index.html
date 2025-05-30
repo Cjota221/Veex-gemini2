@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEEX - Gestão de Produção</title>
+    <meta name="description" content="VEEX - Sistema completo de controle de produção, precificação e gestão financeira.">
+    <meta name="theme-color" content="#0A192F">
+
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsivo.css">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/veex-logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker: Registrado com sucesso, escopo:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker: Falha no registro:', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="app-container">
+        <button class="sidebar-toggle mobile-only-toggle" id="mobileSidebarToggle" aria-label="Abrir menu" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="#/" data-route="/" class="logo-link">
+                    <img src="assets/icons/veex-logo.svg" alt="VEEX Logo" class="logo-icon">
+                    <h1 class="logo-text">VEEX</h1>
+                </a>
+                <button class="sidebar-toggle desktop-only-toggle" id="desktopSidebarToggle" aria-label="Alternar menu lateral" aria-expanded="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                </nav>
+        </aside>
+
+        <main class="main-content" id="mainContentArea">
+            <header class="app-header" id="appHeader">
+                <h2 id="pageTitle">Dashboard</h2>
+                <div class="user-profile">
+                    <span class="user-name">Usuário XPTO</span>
+                    <button class="btn-logout" aria-label="Sair">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                    </button>
+                </div>
+            </header>
+            <section class="page-content-wrapper" id="pageContentWrapper">
+                <div class="page-content-inner" id="pageContent">
+                     <p class="loading-placeholder">Carregando VEEX...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="modalContainer"></div>
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
+
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
