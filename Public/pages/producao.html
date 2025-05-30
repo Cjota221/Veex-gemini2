@@ -1,0 +1,23 @@
+<div class="producao-content page-module-content">
+    <div class="page-header">
+        <h3 class="page-section-title">Ordens de Produção</h3>
+        <div class="add-button-container">
+            <button class="btn btn-primary" id="addProducaoBtn">
+                <img src="assets/icons/plus.svg" alt="" class="btn-icon-svg"> Nova Ordem de Produção
+            </button>
+        </div>
+    </div>
+    <div class="filters-container" id="producaoFilters">
+        <select id="filterProducaoStatus" class="form-control-filter">
+            <option value="">Todos os Status</option>
+            <option value="Planejada">Planejada</option>
+            <option value="Em Andamento">Em Andamento</option>
+            <option value="Pausada">Pausada</option>
+            <option value="Concluída">Concluída</option>
+            <option value="Cancelada">Cancelada</option>
+        </select>
+    </div>
+    <div class="card-grid" id="producaoGrid">
+        <p class="loading-placeholder">Carregando ordens de produção...</p>
+    </div>
+</div>
