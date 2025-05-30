@@ -1,0 +1,5 @@
+[
+    { "id": 1, "nome": "Camiseta Clássica VEEX", "codigo": "VEX-TS001", "custoUnitario": 18.50, "margemLucro": 0.85, "foto": "assets/img-modelos/placeholder-modelo.png", "insumos": [{ "insumoId": 1, "nome": "Tecido Algodão Premium", "qtd": 0.8 }, { "insumoId": 2, "nome": "Linha de Costura Branca", "qtd": 10 }] },
+    { "id": 2, "nome": "Calça Jeans Urbana", "codigo": "VEX-JN002", "custoUnitario": 42.00, "margemLucro": 0.90, "foto": "assets/img-modelos/placeholder-modelo.png", "insumos": [{ "insumoId": 3, "nome": "Denim Indigo", "qtd": 1.2 }, { "insumoId": 4, "nome": "Botão Metálico Jeans", "qtd": 5 }, {"insumoId": 2, "nome": "Linha de Costura Branca", "qtd": 20}] },
+    { "id": 3, "nome": "Bolsa Tote Moderna", "codigo": "VEX-BG003", "custoUnitario": 25.75, "margemLucro": 1.10, "foto": "assets/img-modelos/placeholder-modelo.png", "insumos": [{"insumoId": 5, "nome": "Couro Sintético Preto", "qtd": 0.5}, {"insumoId": 6, "nome": "Zíper Médio Nylon", "qtd": 1}] }
+]
