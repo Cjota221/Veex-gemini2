@@ -1,0 +1,4 @@
+[
+    { "idProd": 101, "modeloId": 1, "modeloNome": "Camiseta Clássica VEEX", "dataInicio": "2025-05-20", "dataPrevistaFim": "2025-05-28", "quantidadeProgramada": 50, "quantidadeProduzida": 10, "custoTotalEstimado": 925.00, "status": "Em Andamento" },
+    { "idProd": 102, "modeloId": 2, "modeloNome": "Calça Jeans Urbana", "dataInicio": "2025-05-15", "dataPrevistaFim": "2025-05-25", "quantidadeProgramada": 30, "quantidadeProduzida": 30, "custoTotalEstimado": 1260.00, "status": "Concluída" }
+]
